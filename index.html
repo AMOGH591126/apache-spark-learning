@@ -1,4 +1,47 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apache Spark Learning Hub</title><style>*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:#080d18;color:#e8eefc;font-family:Inter,system-ui,sans-serif;line-height:1.75;background-image:radial-gradient(circle at 10% 0%,#39248a33,transparent 30rem),radial-gradient(circle at 90% 10%,#21d4fd20,transparent 28rem)}a{color:#8bdcff}.sidebar{position:fixed;z-index:20;inset:0 auto 0 0;width:310px;padding:24px 18px;background:#0a101df5;border-right:1px solid #ffffff1f;overflow:auto;transform:translateX(-100%);transition:.3s}.sidebar.open{transform:translateX(0)}.sidebar-brand{font-weight:800;margin:8px 10px 22px}.sidebar-brand span{color:#21d4fd}.toc-link{display:block;color:#9aa9c2;text-decoration:none;padding:7px 10px;border-radius:9px;font-size:.86rem;line-height:1.35}.toc-link:hover,.toc-link.active{background:#7c5cff2b;color:#fff}.level-1{padding-left:22px;font-size:.82rem}.level-2{padding-left:34px;font-size:.78rem}.overlay{position:fixed;inset:0;background:#0009;z-index:15;display:none}.overlay.show{display:block}.main{width:min(1120px,calc(100% - 22px));margin:auto;padding:16px 0 80px}.topbar{position:sticky;top:12px;z-index:10;display:flex;align-items:center;gap:16px;margin-bottom:28px;padding:12px 16px;border:1px solid #ffffff1f;background:#101827c7;backdrop-filter:blur(18px);border-radius:18px}.menu-btn{width:44px;height:44px;border:0;border-radius:12px;background:linear-gradient(135deg,#7c5cff,#21d4fd);cursor:pointer}.menu-btn i,.menu-btn i:before,.menu-btn i:after{display:block;width:20px;height:2px;background:#07101e;content:'';position:relative;margin:auto}.menu-btn i:before{position:absolute;top:-7px}.menu-btn i:after{position:absolute;top:7px}.top-title{font-weight:800}.top-subtitle{margin-left:auto;color:#9aa9c2;font-size:.85rem}.hero{padding:54px 42px;border:1px solid #ffffff1f;border-radius:28px;background:linear-gradient(135deg,#7c5cff40,#21d4fd14,#101827cc);margin-bottom:28px}.hero h1{font-size:clamp(2.2rem,6vw,4.8rem);line-height:1.05;margin:0 0 14px;letter-spacing:-.05em}.hero p{color:#b9c8e4;max-width:700px}.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.badge{padding:6px 11px;border:1px solid #8bdcff40;color:#b8edff;background:#21d4fd14;border-radius:999px;font-size:.78rem}.content{background:#0d1422c2;border:1px solid #ffffff1f;border-radius:24px;padding:clamp(22px,4vw,52px)}.content h1,.content h2{scroll-margin-top:100px;border-bottom:1px solid #ffffff1f;padding-bottom:12px;margin-top:2.2em;line-height:1.2}.content h1{font-size:2.2rem}.content h2{font-size:1.7rem}.content h3{color:#a9eaff;scroll-margin-top:100px}.content p,.content li{color:#c8d3e8}.content strong{color:#fff}.content blockquote{padding:14px 18px;border-left:4px solid #21d4fd;background:#21d4fd12;border-radius:0 12px 12px 0}.content hr{border:0;border-top:1px solid #ffffff1f;margin:3rem 0}.content table{width:100%;border-collapse:collapse;display:block;overflow-x:auto}.content th,.content td{border:1px solid #ffffff1f;padding:11px 13px;min-width:140px}.content th{background:#7c5cff2b;color:#fff}.content code{background:#202b42;color:#f4f8ff;padding:.18em .42em;border-radius:6px;font-family:Consolas,monospace}.content pre{position:relative;overflow:auto;margin:1.5rem 0;padding:22px 20px;background:#090e18!important;color:#e6edf7!important;border:1px solid #2b3b58;border-radius:14px}.content pre code{display:block;background:transparent!important;color:#e6edf7!important;padding:0;line-height:1.65}.copy-btn{position:absolute;top:9px;right:9px;border:1px solid #334766;background:#18243a;color:#b9c8e4;border-radius:7px;padding:4px 8px;cursor:pointer}.footer{text-align:center;color:#70819d;padding:26px;font-size:.82rem}@media(min-width:1000px){.sidebar{transform:translateX(0)}.main{width:min(1120px,calc(100% - 360px));margin-left:340px;margin-right:20px}}@media(max-width:600px){.top-subtitle{display:none}.hero{padding:34px 24px}.content{padding:22px 18px}}</style></head><body><aside class="sidebar" id="sidebar"><div class="sidebar-brand">⚡ Spark <span>Learning Hub</span></div><nav><a class="toc-link level-0" href="#apache-spark-complete-summary">Apache Spark — Complete Summary</a>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apache Spark Learning Hub</title><style>*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:#080d18;color:#e8eefc;font-family:Inter,system-ui,sans-serif;line-height:1.75;background-image:radial-gradient(circle at 10% 0%,#39248a33,transparent 30rem),radial-gradient(circle at 90% 10%,#21d4fd20,transparent 28rem)}a{color:#8bdcff}.sidebar{position:fixed;z-index:20;inset:0 auto 0 0;width:310px;padding:24px 18px;background:#0a101df5;border-right:1px solid #ffffff1f;overflow:auto;transform:translateX(-100%);transition:.3s}.sidebar.open{transform:translateX(0)}.sidebar-brand{font-weight:800;margin:8px 10px 22px}.sidebar-brand span{color:#21d4fd}.toc-link{display:block;color:#9aa9c2;text-decoration:none;padding:7px 10px;border-radius:9px;font-size:.86rem;line-height:1.35}.toc-link:hover,.toc-link.active{background:#7c5cff2b;color:#fff}.level-1{padding-left:22px;font-size:.82rem}.level-2{padding-left:34px;font-size:.78rem}.overlay{position:fixed;inset:0;background:#0009;z-index:15;display:none}.overlay.show{display:block}.main{width:min(1120px,calc(100% - 22px));margin:auto;padding:16px 0 80px}.topbar{position:sticky;top:12px;z-index:10;display:flex;align-items:center;gap:16px;margin-bottom:28px;padding:12px 16px;border:1px solid #ffffff1f;background:#101827c7;backdrop-filter:blur(18px);border-radius:18px}.menu-btn{width:44px;height:44px;border:0;border-radius:12px;background:linear-gradient(135deg,#7c5cff,#21d4fd);cursor:pointer}.menu-btn i,.menu-btn i:before,.menu-btn i:after{display:block;width:20px;height:2px;background:#07101e;content:'';position:relative;margin:auto}.menu-btn i:before{position:absolute;top:-7px}.menu-btn i:after{position:absolute;top:7px}.top-title{font-weight:800}.top-subtitle{margin-left:auto;color:#9aa9c2;font-size:.85rem}.hero{padding:54px 42px;border:1px solid #ffffff1f;border-radius:28px;background:linear-gradient(135deg,#7c5cff40,#21d4fd14,#101827cc);margin-bottom:28px}.hero h1{font-size:clamp(2.2rem,6vw,4.8rem);line-height:1.05;margin:0 0 14px;letter-spacing:-.05em}.hero p{color:#b9c8e4;max-width:700px}.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.badge{padding:6px 11px;border:1px solid #8bdcff40;color:#b8edff;background:#21d4fd14;border-radius:999px;font-size:.78rem}.content{background:#0d1422c2;border:1px solid #ffffff1f;border-radius:24px;padding:clamp(22px,4vw,52px)}.content h1,.content h2{scroll-margin-top:100px;border-bottom:1px solid #ffffff1f;padding-bottom:12px;margin-top:2.2em;line-height:1.2}.content h1{font-size:2.2rem}.content h2{font-size:1.7rem}.content h3{color:#a9eaff;scroll-margin-top:100px}.content p,.content li{color:#c8d3e8}.content strong{color:#fff}.content blockquote{padding:14px 18px;border-left:4px solid #21d4fd;background:#21d4fd12;border-radius:0 12px 12px 0}.content hr{border:0;border-top:1px solid #ffffff1f;margin:3rem 0}.content table{width:100%;border-collapse:collapse;display:block;overflow-x:auto}.content th,.content td{border:1px solid #ffffff1f;padding:11px 13px;min-width:140px}.content th{background:#7c5cff2b;color:#fff}.content code{background:#202b42;color:#f4f8ff;padding:.18em .42em;border-radius:6px;font-family:Consolas,monospace}.content pre{position:relative;overflow:auto;margin:1.5rem 0;padding:22px 20px;background:#090e18!important;color:#e6edf7!important;border:1px solid #2b3b58;border-radius:14px}.content pre code{display:block;background:transparent!important;color:#e6edf7!important;padding:0;line-height:1.65}.copy-btn{position:absolute;top:9px;right:9px;border:1px solid #334766;background:#18243a;color:#b9c8e4;border-radius:7px;padding:4px 8px;cursor:pointer}.footer{text-align:center;color:#70819d;padding:26px;font-size:.82rem}@media(min-width:1000px){.sidebar{transform:translateX(0)}.main{width:min(1120px,calc(100% - 360px));margin-left:340px;margin-right:20px}}@media(max-width:600px){.top-subtitle{display:none}.hero{padding:34px 24px}.content{padding:22px 18px}}
+/* Minimal requested changes: hide/show topics sidebar */
+.hide-sidebar-btn{
+  width:100%;
+  margin:0 0 18px;
+  padding:9px 12px;
+  border:1px solid #ffffff22;
+  border-radius:9px;
+  background:#151e2e;
+  color:#c8d3e8;
+  cursor:pointer;
+  text-align:left;
+  font:inherit;
+  font-size:.82rem;
+}
+.hide-sidebar-btn:hover{background:#202d42;color:#fff}
+body.sidebar-hidden .sidebar{
+  transform:translateX(-100%) !important;
+}
+body.sidebar-hidden .overlay{display:none !important}
+body.sidebar-hidden .main{
+  width:min(1120px,calc(100% - 22px));
+  margin:auto;
+}
+
+/* Sidebar hide/unhide control */
+.show-sidebar-tab{
+  position:fixed;
+  left:0;
+  top:22px;
+  z-index:50;
+  display:none;
+  padding:10px 12px;
+  border:1px solid #303b52;
+  border-left:0;
+  border-radius:0 9px 9px 0;
+  background:#151e2e;
+  color:#cbd8ef;
+  cursor:pointer;
+  font:600 12px/1 Inter,system-ui,sans-serif;
+}
+.show-sidebar-tab:hover{background:#202d42;color:#fff}
+body.sidebar-hidden .show-sidebar-tab{display:block}
+</style></head><body><button class="show-sidebar-tab" id="showSidebarBtn" aria-label="Show topics">Topics ›</button><aside class="sidebar" id="sidebar"><button class="hide-sidebar-btn" id="hideSidebarBtn">× Hide topics</button><div class="sidebar-brand">⚡ Spark <span>Learning Hub</span></div><nav><a class="toc-link level-0" href="#apache-spark-complete-summary">Apache Spark — Complete Summary</a>
 <a class="toc-link level-1" href="#spark-execution-in-one-view">Spark execution in one view</a>
 <a class="toc-link level-1" href="#core-concepts">Core concepts</a>
 <a class="toc-link level-1" href="#interview-ready-summary">Interview-ready summary</a>
@@ -98,7 +141,7 @@
 <a class="toc-link level-0" href="#16-interview-ready-summary">16. Interview-ready summary</a>
 <a class="toc-link level-2" href="#what-happens-when-you-run-a-spark-dataframe-query">What happens when you run a Spark DataFrame query?</a>
 <a class="toc-link level-0" href="#17-quick-revision-table">17. Quick revision table</a>
-<a class="toc-link level-1" href="#final-understanding-check">Final understanding check</a></nav></aside><div class="overlay" id="overlay"></div><main class="main"><div class="topbar"><button class="menu-btn" id="menuBtn" aria-label="Open topics menu"><i></i></button><div class="top-title">Apache Spark · Immersive Notes</div><div class="top-subtitle">Learn the mental model, then master the internals</div></div><section class="hero"><h1>Apache Spark<br><span style="color:#8bdcff">Learning Hub</span></h1><p>A visual, distraction-free learning experience for mastering Spark architecture, execution, partitions, shuffles, and performance fundamentals.</p><div class="badges"><span class="badge">Distributed Processing</span><span class="badge">PySpark</span><span class="badge">Interview Ready</span><span class="badge">Execution Deep Dive</span></div></section><article class="content"><h1 id="apache-spark-complete-summary">Apache Spark — Complete Summary</h1>
+<a class="toc-link level-1" href="#final-understanding-check">Final understanding check</a></nav></aside><div class="overlay" id="overlay"></div><main class="main"><div class="top-subtitle"></div></div><section class="hero"><h1>Apache Spark<br><span style="color:#8bdcff">Learning Hub</span></h1><p>A visual, distraction-free learning experience for mastering Spark architecture, execution, partitions, shuffles, and performance fundamentals.</p><div class="badges"><span class="badge">Distributed Processing</span><span class="badge">PySpark</span><span class="badge">Interview Ready</span><span class="badge">Execution Deep Dive</span></div></section><article class="content"><h1 id="apache-spark-complete-summary">Apache Spark — Complete Summary</h1>
 <blockquote><strong>The big picture:</strong> Apache Spark is a distributed processing engine. It reads data, divides it into partitions, processes those partitions in parallel across executors, and writes or returns the result.</blockquote>
 <h2 id="spark-execution-in-one-view">Spark execution in one view</h2>
 <pre><code>PySpark Code
@@ -797,4 +840,22 @@ Result</code></pre>
 <h2 id="final-understanding-check">Final understanding check</h2>
 <p>Before moving ahead, you should be able to answer these without looking:</p>
 <ol><li>Why does Spark need a Driver?</li><li>What is the difference between Driver and Executor?</li><li>Why does <code>filter()</code> not immediately execute?</li><li>What triggers a Spark job?</li><li>Why does <code>groupBy()</code> usually create a shuffle?</li><li>What is the difference between a partition and a task?</li><li>Why are wide transformations more expensive?</li><li>Why are DataFrames preferred over RDDs for most modern workloads?</li><li>Why would caching improve performance?</li><li>Explain the full flow from <code>df.filter(...).groupBy(...).show()</code> to execution.</li></ol>
-<p>If you understand those ten, you have genuinely understood the foundation—not just memorized definitions.</p></article><div class="footer">Built for focused learning · Apache Spark Fundamentals</div></main><script>const s=document.getElementById('sidebar'),o=document.getElementById('overlay');function toggle(){s.classList.toggle('open');o.classList.toggle('show')}document.getElementById('menuBtn').onclick=toggle;o.onclick=toggle;document.querySelectorAll('.toc-link').forEach(x=>x.onclick=()=>{if(innerWidth<1000)toggle()});document.querySelectorAll('pre').forEach(p=>{let b=document.createElement('button');b.className='copy-btn';b.textContent='Copy';b.onclick=async()=>{await navigator.clipboard.writeText(p.querySelector('code').innerText);b.textContent='Copied!';setTimeout(()=>b.textContent='Copy',1200)};p.appendChild(b)});</script></body></html>
+<p>If you understand those ten, you have genuinely understood the foundation—not just memorized definitions.</p></article><div class="footer">Built for focused learning · Apache Spark Fundamentals</div></main><script>
+const s=document.getElementById('sidebar'),o=document.getElementById('overlay');
+const hide=document.getElementById('hideSidebarBtn'),show=document.getElementById('showSidebarBtn');
+function toggle(){s.classList.toggle('open');o.classList.toggle('show')}
+o.onclick=toggle;
+hide.onclick=()=>{
+  s.classList.remove('open');o.classList.remove('show');
+  document.body.classList.add('sidebar-hidden');
+};
+show.onclick=()=>{
+  document.body.classList.remove('sidebar-hidden');
+};
+document.querySelectorAll('.toc-link').forEach(x=>x.onclick=()=>{if(innerWidth<1000&&s.classList.contains('open'))toggle()});
+document.querySelectorAll('pre').forEach(p=>{
+  let b=document.createElement('button');b.className='copy-btn';b.textContent='Copy';
+  b.onclick=async()=>{await navigator.clipboard.writeText(p.querySelector('code').innerText);b.textContent='Copied!';setTimeout(()=>b.textContent='Copy',1200)};
+  p.appendChild(b);
+});
+</script></body></html>
